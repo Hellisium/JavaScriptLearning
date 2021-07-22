@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <script language="javascript"> 
+            var nbrs = [1,2,3,4,5,6,7,8,9];
+            var map = nbrs.map(function (n) { return n * 2})
+
+            console.log(map);
+
+            ///// FILTER /////
+
+            const mots = ["singe", "également", "faire","certainement"];
+
+            const longsmots = mots.filter(mots => mots.length > 6 );
+
+            console.log("Les plus longs mots sont :" + longsmots);
+
+            ///// REDUCE /////
+
+            const total =[0,1,2,3]
+
+            const reduce = total.reduce((sum, value)=> {
+                return sum+value;
+            });
+
+            console.log(reduce);
+
+            ///// REDUCE /////
+            
+            const tableau = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+            const found = tableau.find(element => element > 10);
+
+            console.log(found);
+            
+        </script>
+    </body>
+</html>
